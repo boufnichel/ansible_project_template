@@ -1,0 +1,53 @@
+---
+- name: Create basic ansible project folder on {{project_path}}
+  file:
+    path: "{{project_path}}"
+    state: directory
+
+- name: Create roles folder
+  file:
+    path: "{{roles_path}}/{{generated_role_name}}"
+    state: directory
+
+- name: Copy root config files
+  copy:
+     src: "{{item}}"
+     dest: "{{project_path}}"
+  with_items:
+    - site.yml
+    - webservers.yml
+    - dbservers.yml
+    - local
+    - integration
+    - staging
+
+- name: Create {{generated_role_name}} role structure
+  file:
+    path: "{{roles_path}}/{{generated_role_name}}/{{item}}"
+    state: directory
+  with_items:
+    - tasks
+    - files
+    - vars
+    - template
+    - handlers
+    - defaults
+    - meta
+  tags:
+   trole
+
+- name: Copy main.yml
+  copy:
+     src: main.yml
+     dest: "{{roles_path}}/{{generated_role_name}}/{{item}}/"
+  with_items:
+    - tasks
+    - files
+    - vars
+    - template
+    - handlers
+    - defaults
+    - meta
+  tags:
+   trole
+...

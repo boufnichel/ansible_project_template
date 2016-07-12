@@ -1,0 +1,9 @@
+---
+# webserver playbook
+
+- hosts: webservers
+
+# put your roles here
+
+  roles:
+    - common

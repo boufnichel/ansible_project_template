@@ -1,0 +1,10 @@
+---
+# path of the generated project
+project_path: "{{bpath | default('/mnt/boufnichel/ansible_project/')}}"
+
+# path of the 'roles' folder
+roles_path: "{{project_path}}/roles/"
+
+# name of the role
+generated_role_name: "{{brole | default('common')}}"
+...

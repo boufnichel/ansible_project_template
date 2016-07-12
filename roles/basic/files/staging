@@ -1,0 +1,12 @@
+[fo-webservers]
+#10.42.8.10
+
+[bo-webservers]
+#10.42.8.25
+
+[webservers:children]
+#fo-webservers
+#bo-webservers
+
+[dbservers]
+#10.42.9.125
