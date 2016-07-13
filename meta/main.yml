@@ -1,0 +1,15 @@
+---
+dependencies: []
+galaxy_info:
+  author: "Boufnichel Mohamed"
+  categories:
+    - development
+  company: mboufnichel
+  description: >
+    ansible role to manage the ansible project structure (create initial structure, add new role, etc...)
+  license: "GNU General Public License v3.0"
+  min_ansible_version: 1.2
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
