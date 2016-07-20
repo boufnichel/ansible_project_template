@@ -36,7 +36,7 @@
   tags:
    trole
 
-- name: Copy main.yml
+- name: Copy the empty main.yml
   copy:
      src: main.yml
      dest: "{{roles_path}}/{{generated_role_name}}/{{item}}/"
