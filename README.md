@@ -1,4 +1,6 @@
 # Ansible project template role
+[![Build Status](https://travis-ci.org/boufnichel/ansible_project_template.svg?branch=master)](https://travis-ci.org/boufnichel/ansible_project_template)
+
 ## Introduction
 This role allow ansible newbies to create a standard project structure as explain below
 > [Ansible best practices ](http://docs.ansible.com/ansible/playbooks_best_practices.html)
