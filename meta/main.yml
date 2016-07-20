@@ -2,7 +2,7 @@
 dependencies: []
 galaxy_info:
   author: "Boufnichel Mohamed"
-  categories:
+  galaxy_tags:
     - development
   company: mboufnichel
   description: >
@@ -12,4 +12,4 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - Ubuntu 16.04 LTS
+        - 16.04 LTS
