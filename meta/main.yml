@@ -12,4 +12,4 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - trusty
+        - Xenial64
