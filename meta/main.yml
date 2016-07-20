@@ -12,4 +12,4 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - Xenial
+        - Ubuntu 16.04 LTS
