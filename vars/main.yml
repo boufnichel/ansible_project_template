@@ -1,6 +1,6 @@
 ---
 # path of the generated project
-project_path: "{{bpath | default('/mnt/boufnichel/ansible_project/')}}"
+project_path: "{{bpath | default('/mnt/ansible_project/')}}"
 
 # path of the 'roles' folder
 roles_path: "{{project_path}}/roles/"
