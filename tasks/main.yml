@@ -18,7 +18,6 @@
     - webservers.yml
     - dbservers.yml
     - local
-    - integration
     - staging
 
 - name: Create {{generated_role_name}} role structure
